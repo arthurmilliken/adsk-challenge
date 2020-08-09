@@ -1,0 +1,383 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Movie App API",
+    "version": "1.0"
+  },
+  "host": "example.com",
+  "paths": {
+    "/myMovieList": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "List of movies the user has saved.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Title": {
+                    "type": "string"
+                  },
+                  "Year": {
+                    "type": "string"
+                  },
+                  "Rated": {
+                    "type": "string"
+                  },
+                  "Released": {
+                    "type": "string"
+                  },
+                  "Runtime": {
+                    "type": "string"
+                  },
+                  "Genre": {
+                    "type": "string"
+                  },
+                  "Director": {
+                    "type": "string"
+                  },
+                  "Writer": {
+                    "type": "string"
+                  },
+                  "Actors": {
+                    "type": "string"
+                  },
+                  "Plot": {
+                    "type": "string"
+                  },
+                  "Language": {
+                    "type": "string"
+                  },
+                  "Country": {
+                    "type": "string"
+                  },
+                  "Awards": {
+                    "type": "string"
+                  },
+                  "Poster": {
+                    "type": "string"
+                  },
+                  "Comments": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "timeStamp": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "Ratings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Source": {
+                          "type": "string"
+                        },
+                        "Value": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "Metascore": {
+                    "type": "string"
+                  },
+                  "imdbRating": {
+                    "type": "string"
+                  },
+                  "imdbVotes": {
+                    "type": "string"
+                  },
+                  "imdbID": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  },
+                  "DVD": {
+                    "type": "string"
+                  },
+                  "BoxOffice": {
+                    "type": "string"
+                  },
+                  "Production": {
+                    "type": "string"
+                  },
+                  "Website": {
+                    "type": "string"
+                  },
+                  "Response": {
+                    "type": "string"
+                  },
+                  "": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "examples": {
+              "application/json": [
+                {
+                  "Title": "culpa in enim reprehenderit",
+                  "Year": "ipsum deserunt adipisicing",
+                  "Rated": "eiusmod anim",
+                  "Released": "dolore Lorem incididunt aliquip",
+                  "Runtime": "est enim culpa sed",
+                  "Genre": "occaecat eiusmod",
+                  "Director": "nostrud quis",
+                  "Writer": "nostrud incididunt labore irure",
+                  "Actors": "exercitation consequat dolore ut id",
+                  "Plot": "pariatur magna",
+                  "Language": "",
+                  "Country": "ad eiusmod voluptat",
+                  "Awards": "proident cillum incididunt ea",
+                  "Poster": "dolore anim",
+                  "Comments": [
+                    {
+                      "timeStamp": "nisi est minim",
+                      "text": "id Ut in"
+                    }
+                  ],
+                  "Ratings": [
+                    {
+                      "Source": "ex",
+                      "Value": "in irure"
+                    },
+                    {
+                      "Source": "cupidatat irure Excepteur",
+                      "Value": "aute dolor sed dolore"
+                    }
+                  ],
+                  "Metascore": "laborum nulla in anim voluptate",
+                  "imdbRating": "sunt fugiat",
+                  "imdbVotes": "esse",
+                  "imdbID": "eiusmod laboris ut culpa elit",
+                  "Type": "cupidatat f",
+                  "DVD": "enim",
+                  "BoxOffice": "consequat ad",
+                  "Production": "est voluptate dolore Lorem",
+                  "Website": "non ut sunt",
+                  "Response": "officia dolore",
+                  "": "irure cillum Excepteur elit"
+                },
+                {
+                  "Title": "nostrud Ut Lorem labore",
+                  "Year": "sit velit eiusmod minim cupidatat",
+                  "Rated": "sed",
+                  "Released": "dolor id amet veniam",
+                  "Runtime": "laboris",
+                  "Genre": "ut dolore dolor",
+                  "Director": "ut",
+                  "Writer": "anim culpa ut",
+                  "Actors": "ullamco sunt qui in",
+                  "Plot": "culpa",
+                  "Language": "et adipis",
+                  "Country": "esse in aliqua qui",
+                  "Awards": "dolore sint magna laboris id",
+                  "Poster": "irure nisi exercitation in minim",
+                  "Comments": [
+                    {
+                      "timeStamp": "ma",
+                      "text": "dolore consectetur ex labore"
+                    },
+                    {
+                      "timeStamp": "magna non et amet",
+                      "text": "ex nulla cupidatat adipisicing"
+                    }
+                  ],
+                  "Ratings": [
+                    {
+                      "Source": "aliquip in",
+                      "Value": "occaecat sed Excepteur sunt"
+                    },
+                    {
+                      "Source": "",
+                      "Value": "consectetur est"
+                    },
+                    {
+                      "Source": "magna velit Ut in",
+                      "Value": "elit laborum esse "
+                    },
+                    {
+                      "Source": "officia",
+                      "Value": "minim"
+                    }
+                  ],
+                  "Metascore": "occaecat aliquip",
+                  "imdbRating": "nisi dolore ipsum cillum",
+                  "imdbVotes": "aliqua",
+                  "imdbID": "dolor",
+                  "Type": "pariatur elit amet dolor laboris",
+                  "DVD": "culpa",
+                  "BoxOffice": "exercitation elit",
+                  "Production": "anim commodo dolore",
+                  "Website": "cupidatat",
+                  "Response": "anim quis",
+                  "": "esse Excepteur id"
+                }
+              ]
+            }
+          }
+        },
+        "summary": "Returns a list of movies the user has saved",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "watched",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "rating",
+            "type": "string",
+            "description": "Allows the user to filter by a rating value. User has the option to return specific values or ranges. For example, \"rateing=3\" will return all movies with a 3 rating. \"rating=+3\" will return all movies with a rating of 3 or more. \"rating=-3\" will return all movies with a rating of 3 or less. ",
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              -2,
+              -3,
+              -4,
+              -5,
+              -6,
+              -7,
+              -8,
+              -9,
+              "+2",
+              "+3",
+              "+4",
+              "+5",
+              "+6",
+              "+7",
+              "+8",
+              "+9"
+            ]
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "type": "string",
+            "enum": [
+              "title asc",
+              "title desc",
+              "year asc",
+              "year desc"
+            ],
+            "description": "Sort results by year or title. Must provide a direction to sort. Valid values are: 'title asc', 'title desc', 'year asc', 'year desc'."
+          }
+        ],
+        "description": "API to return movies from a user's list."
+      }
+    }
+  },
+  "definitions": {
+    "movie": {
+      "type": "object",
+      "properties": {
+        "Title": {
+          "type": "string"
+        },
+        "Year": {
+          "type": "string"
+        },
+        "Rated": {
+          "type": "string"
+        },
+        "Released": {
+          "type": "string"
+        },
+        "Runtime": {
+          "type": "string"
+        },
+        "Genre": {
+          "type": "string"
+        },
+        "Director": {
+          "type": "string"
+        },
+        "Writer": {
+          "type": "string"
+        },
+        "Actors": {
+          "type": "string"
+        },
+        "Plot": {
+          "type": "string"
+        },
+        "Language": {
+          "type": "string"
+        },
+        "Country": {
+          "type": "string"
+        },
+        "Awards": {
+          "type": "string"
+        },
+        "Poster": {
+          "type": "string"
+        },
+        "Ratings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Source": {
+                "type": "string"
+              },
+              "Value": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "Metascore": {
+          "type": "string"
+        },
+        "imdbRating": {
+          "type": "string"
+        },
+        "imdbVotes": {
+          "type": "string"
+        },
+        "imdbID": {
+          "type": "string"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "DVD": {
+          "type": "string"
+        },
+        "BoxOffice": {
+          "type": "string"
+        },
+        "Production": {
+          "type": "string"
+        },
+        "Website": {
+          "type": "string"
+        },
+        "Response": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+    "Search": [
+        {
+            "Title": "Apocalypse Now",
+            "Year": "1979",
+            "imdbID": "tt0078788",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMDdhODg0MjYtYzBiOS00ZmI5LWEwZGYtZDEyNDU4MmQyNzFkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+        },
+        {
+            "Title": "X-Men: Apocalypse",
+            "Year": "2016",
+            "imdbID": "tt3385516",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjU1ODM1MzYxN15BMl5BanBnXkFtZTgwOTA4NDE2ODE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Resident Evil: Apocalypse",
+            "Year": "2004",
+            "imdbID": "tt0318627",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTc1NTUxMzk0Nl5BMl5BanBnXkFtZTcwNDQ1MDIzMw@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Scouts Guide to the Zombie Apocalypse",
+            "Year": "2015",
+            "imdbID": "tt1727776",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NjczNjE4OV5BMl5BanBnXkFtZTgwODk0MjQ5NjE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Superman/Batman: Apocalypse",
+            "Year": "2010",
+            "imdbID": "tt1673430",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjk3ODhmNjgtZjllOC00ZWZjLTkwYzQtNzc1Y2ZhMjY2ODE0XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Crimson Rivers 2: Angels of the Apocalypse",
+            "Year": "2004",
+            "imdbID": "tt0337103",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNzc5OTA4NDgtMjAzZi00MjFhLTk4OWQtNDRkNmNjZDNlN2FjXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Hearts of Darkness: A Filmmaker's Apocalypse",
+            "Year": "1991",
+            "imdbID": "tt0102015",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNWQxZTQ4OTItNTdmNS00NGY0LTg5NDAtZjViMjQ2ODg3ZGFhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+            "Title": "[REC] 4: Apocalypse",
+            "Year": "2014",
+            "imdbID": "tt1649443",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BOTU3OTU2ODc5MF5BMl5BanBnXkFtZTgwNjY3MDY2MzE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Apocalypse: The Second World War",
+            "Year": "2009",
+            "imdbID": "tt1508238",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYzNkNWY1OWYtYzRjNy00ZTZhLTg4ZTAtODg5YmI3OTFlMzY5XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Anna and the Apocalypse",
+            "Year": "2017",
+            "imdbID": "tt6433880",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTU4NTM4NDQyNV5BMl5BanBnXkFtZTgwMjY0NTI0NjM@._V1_SX300.jpg"
+        }
+    ],
+    "totalResults": "447",
+    "Response": "True"
+}
