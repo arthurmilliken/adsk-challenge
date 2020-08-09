@@ -16,17 +16,13 @@ ROUTES:
 
 - /api/omdb -- OMDB search
 - /api/omdb/:imdbID -- OMDB find by ID
-- /api/myMovieList -- retrieve movie list
-- /api/myMovieList/:imdbID -- movie additional details
-  - PUT: { imdbID, watched, rating, comments }
+- /api/myMovieList -- myMovieList
+  - GET: get all movies (plus fitering/sort)
+  - POST: add movie to list { imdbID }
+- /api/myMovieList/:imdbID -- myMovieList
+  - GET: find by ID
+  - PATCH: { imdbID, watched, rating, comments }
 
-- / -- home page (my movie list: REACT)
+- / -- home page (React.js Application)
 
 ---
-
-MODELS:
-
-savedMovie: {
-  imdbID, Title, Year, Type, Poster,
-  UserWatched, UserRating, UserComments
-}

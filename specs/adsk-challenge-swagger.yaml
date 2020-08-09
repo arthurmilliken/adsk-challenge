@@ -1,0 +1,217 @@
+swagger: '2.0'
+info:
+  title: Movie App API
+  version: '1.0'
+host: example.com
+paths:
+  /myMovieList:
+    get:
+      responses:
+        '200':
+          description: List of movies the user has saved.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Movie'
+          examples:
+            application/json:
+              - Title: Apocalypse Now
+                Year: '1979'
+                Rated: R
+                Released: 15 Aug 1979
+                Runtime: 147 min
+                Genre: 'Drama, Mystery, War'
+                Director: Francis Ford Coppola
+                Writer: 'John Milius, Francis Ford Coppola, Michael Herr (narration)'
+                Actors: 'Marlon Brando, Martin Sheen, Robert Duvall, Frederic Forrest'
+                Plot: 'It is the height of the war in Vietnam, and U.S. Army Captain Willard is sent by Colonel Lucas and a General to carry out a mission that, officially, ''does not exist - nor will it ever exist''. The mission: To seek out a mysterious Green Beret Colonel, Walter Kurtz, whose army has crossed the border into Cambodia and is conducting hit-and-run missions against the Viet Cong and NVA. The army believes Kurtz has gone completely insane and Willard''s job is to eliminate him! Willard, sent up the Nung River on a U.S. Navy patrol boat, discovers that his target is one of the most decorated officers in the U.S. Army. His crew meets up with surfer-type Lt-Colonel Kilgore, head of a U.S Army helicopter cavalry group which eliminates a Viet Cong outpost to provide an entry point into the Nung River. After some hair-raising encounters, in which some of his crew are killed, Willard, Lance and Chef reach Colonel Kurtz''s outpost, beyond the Do Lung Bridge. Now, after becoming prisoners of Kurtz, will Willard & the others be able to fulfill their mission?'
+                Language: 'English, French, Vietnamese'
+                Country: USA
+                Awards: Won 2 Oscars. Another 18 wins & 32 nominations.
+                Poster: 'https://m.media-amazon.com/images/M/MV5BMDdhODg0MjYtYzBiOS00ZmI5LWEwZGYtZDEyNDU4MmQyNzFkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg'
+                Ratings:
+                  - Source: Internet Movie Database
+                    Value: 8.4/10
+                  - Source: Rotten Tomatoes
+                    Value: 98%
+                  - Source: Metacritic
+                    Value: 94/100
+                Metascore: '94'
+                imdbRating: '8.4'
+                imdbVotes: '588,630'
+                imdbID: tt0078788
+                Type: movie
+                DVD: 20 Nov 2001
+                BoxOffice: N/A
+                Production: United Artists
+                Website: N/A
+                Response: 'True'
+                Watched: false
+                Comments: []
+              - Title: 'X-Men: Apocalypse'
+                Year: '2016'
+                Rated: PG-13
+                Released: 27 May 2016
+                Runtime: 144 min
+                Genre: 'Action, Adventure, Sci-Fi'
+                Director: Bryan Singer
+                Writer: 'Simon Kinberg (screenplay by), Bryan Singer (story by), Simon Kinberg (story by), Michael Dougherty (story by), Dan Harris (story by)'
+                Actors: 'James McAvoy, Michael Fassbender, Jennifer Lawrence, Nicholas Hoult'
+                Plot: 'Since the dawn of civilization, he was worshiped as a god. Apocalypse, the first and most powerful mutant from Marvel''s X-Men universe, amassed the powers of many other mutants, becoming immortal and invincible. Upon awakening after thousands of years, he is disillusioned with the world as he finds it and recruits a team of powerful mutants, including a disheartened Magneto, to cleanse mankind and create a new world order, over which he will reign. As the fate of the Earth hangs in the balance, Raven with the help of Professor X must lead a team of young X-Men to stop their greatest nemesis and save mankind from complete destruction.'
+                Language: 'English, Polish, German, Arabic, Egyptian (Ancient)'
+                Country: USA
+                Awards: 1 win & 19 nominations.
+                Poster: 'https://m.media-amazon.com/images/M/MV5BMjU1ODM1MzYxN15BMl5BanBnXkFtZTgwOTA4NDE2ODE@._V1_SX300.jpg'
+                Ratings:
+                  - Source: Internet Movie Database
+                    Value: 6.9/10
+                  - Source: Rotten Tomatoes
+                    Value: 47%
+                  - Source: Metacritic
+                    Value: 52/100
+                Metascore: '52'
+                imdbRating: '6.9'
+                imdbVotes: '382,834'
+                imdbID: tt3385516
+                Type: movie
+                DVD: 04 Oct 2016
+                BoxOffice: '$135,729,385'
+                Production: 20th Century Fox
+                Website: N/A
+                Response: 'True'
+                Watched: false
+                Comments: []
+      summary: Returns a list of movies the user has saved
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: watched
+          type: boolean
+        - in: query
+          name: rating
+          type: string
+          description: 'Allows the user to filter by a rating value. User has the option to return specific values or ranges. For example, "rateing=3" will return all movies with a 3 rating. "rating=+3" will return all movies with a rating of 3 or more. "rating=-3" will return all movies with a rating of 3 or less. '
+          enum:
+            - '1'
+            - '2'
+            - '3'
+            - '4'
+            - '5'
+            - '6'
+            - '7'
+            - '8'
+            - '9'
+            - '10'
+            - '-2'
+            - '-3'
+            - '-4'
+            - '-5'
+            - '-6'
+            - '-7'
+            - '-8'
+            - '-9'
+            - '+2'
+            - '+3'
+            - '+4'
+            - '+5'
+            - '+6'
+            - '+7'
+            - '+8'
+            - '+9'
+        - in: query
+          name: sort
+          type: string
+          enum:
+            - title asc
+            - title desc
+            - year asc
+            - year desc
+          description: 'Sort results by year or title. Must provide a direction to sort. Valid values are: ''title asc'', ''title desc'', ''year asc'', ''year desc''.'
+      description: API to return movies from a user's list.
+    post:
+      summary: add movie to myMovieList
+      consumes:
+       - application/json
+      parameters:
+        - in: body
+          name: imdbID
+          schema:
+            type: string
+          description: the imdbID of the movie to add.
+          required: true
+      responses:
+        '201':
+          description: Created    
+definitions:
+  Movie:
+    type: object
+    properties:
+      Title:
+        type: string
+      Year:
+        type: string
+      Rated:
+        type: string
+      Released:
+        type: string
+      Runtime:
+        type: string
+      Genre:
+        type: string
+      Director:
+        type: string
+      Writer:
+        type: string
+      Actors:
+        type: string
+      Plot:
+        type: string
+      Language:
+        type: string
+      Country:
+        type: string
+      Awards:
+        type: string
+      Poster:
+        type: string
+      Ratings:
+        type: array
+        items:
+          type: object
+          properties:
+            Source:
+              type: string
+            Value:
+              type: string
+      Metascore:
+        type: string
+      imdbRating:
+        type: string
+      imdbVotes:
+        type: string
+      imdbID:
+        type: string
+      Type:
+        type: string
+      DVD:
+        type: string
+      BoxOffice:
+        type: string
+      Production:
+        type: string
+      Website:
+        type: string
+      Response:
+        type: string
+      Watched:
+        type: boolean
+      Comments:
+        type: array
+        items:
+          type: object
+          properties:
+            TimeStamp:
+              type: string
+            Text:
+              type: string

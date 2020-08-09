@@ -7,8 +7,6 @@ var path = require('path');
 var morgan = require('morgan');
 
 var apiRouter = require('./routes/api');
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
 var app = express();
 
@@ -23,8 +21,6 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/api', apiRouter);
 
 app.locals.myMovieList = new Map(); // initialize movie list.
