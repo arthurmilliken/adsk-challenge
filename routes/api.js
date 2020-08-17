@@ -79,7 +79,7 @@ router.route('/myMovieList')
 
 /**
  * Data operations on myMovieList detail
- * Methods: GET, PUT
+ * Methods: GET, PATCH
  */
 router.route('/myMovieList/:imdbID')
 .get(async (req, res) => {
